@@ -3,9 +3,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="items">
       <h1>It Works!</h1>
-      <ul>
+      <ul className="item-list">
         <li>Harry Potter</li>
         <li>Sherlock Holmes</li>
         <li>Avengers</li>
