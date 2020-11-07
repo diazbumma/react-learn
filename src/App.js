@@ -4,9 +4,9 @@ import ItemList from './components/ItemList';
 
 const App = () => {
   const movies = [
-    {title: "Harry Potter"},
-    {title: "Fantastic Beasts And Where To Find Them"},
-    {title: "Harry Potter and the Chamber of Secret"}
+    {id:"mv1", title: "Harry Potter"},
+    {id:"mv2", title: "Fantastic Beasts And Where To Find Them"},
+    {id:"mv3", title: "Harry Potter and the Chamber of Secret"}
   ];
 
   return (
