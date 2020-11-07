@@ -1,11 +1,11 @@
 import './ItemList.css'
 
-const ItemList = () => {
+const ItemList = (props) => {
     return (
         <ul className="item-list">
-            <li>Harry Potter</li>
-            <li>Sherlock Holmes</li>
-            <li>Avengers</li>
+            {props.movies.map((item) => {
+                return <li>{item.title}</li>
+            })}
         </ul>
     );
 }
