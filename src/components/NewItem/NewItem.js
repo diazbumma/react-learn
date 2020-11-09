@@ -1,6 +1,6 @@
 import './NewItem.css'
 
-const NewItem = () => {
+const NewItem = (props) => {
     const addItemHandler = (event) => {
         event.preventDefault();
 
@@ -9,7 +9,7 @@ const NewItem = () => {
             text: 'Lakad Matataaaaaag'
         }
 
-        console.log(newItem)
+        props.addNewItem(newItem)
     }
 
     return (       

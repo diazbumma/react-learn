@@ -10,10 +10,14 @@ const App = () => {
     {id:"mv3", title: "Harry Potter and the Chamber of Secret"}
   ];
 
+  const addNewItemHandler = (item) => {
+    console.log('From App js ' + item.id + ' ' + item.text)
+  }
+
   return (
     <div className="content">
       <h1>It Works!</h1>
-      <NewItem />
+      <NewItem addNewItem={addNewItemHandler} />
       <ItemList movies={movies}/>
     </div>
   );
