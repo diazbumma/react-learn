@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import ItemList from './components/ItemList';
+import ItemList from './components/ItemList/ItemList';
+import NewItem from './components/NewItem/NewItem';
 
 const App = () => {
   const movies = [
@@ -12,6 +13,7 @@ const App = () => {
   return (
     <div className="content">
       <h1>It Works!</h1>
+      <NewItem />
       <ItemList movies={movies}/>
     </div>
   );
