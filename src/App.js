@@ -13,7 +13,8 @@ const App = () => {
   ]);
 
   const addNewItemHandler = (item) => {
-    setItemList(itemList.concat(item))
+    //setItemList(itemList.concat(item))
+    setItemList(prevItemList => prevItemList.concat(item));
     //console.log(item.id)
   }
 
