@@ -5,7 +5,7 @@ const NewItem = (props) => {
         event.preventDefault();
 
         const newItem = {
-            id: 'someId123',
+            id: 'mvp' + (Math.floor((Math.random() * 100) + 1)),
             text: 'Lakad Matataaaaaag'
         }
 
