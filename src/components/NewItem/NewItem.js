@@ -14,7 +14,7 @@ const NewItem = (props) => {
         }
 
         //console.log(inputText)
-        setInputText = ''
+        setInputText('')
 
         props.addNewItem(newItem)
     }
